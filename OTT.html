@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="OTT.css">
+    <title>OTT platform clone</title>
+</head>
+<body>
+    <header>
+        <h1>MOVIE FLIX</h1>
+        <input type="text" id="searchInput" placeholder="Search">
+    </header>
+
+    <section class="home">
+        <h2>Trending Movies</h2>
+        <!-- Trending Movies Section -->
+        <div class="movie-container">
+          <div class="movie" onclick="showDetails('Salaar')">
+            <img src="images/salaar.jpg" alt="Salaar">
+            <p>Salaar</p>
+          </div>
+          <div class="movie" onclick="showDetails('Joker')">
+            <img src="images/joker_full.avif" alt="Joker">
+            <p>Joker</p>
+          </div>
+          <div class="movie" onclick="showDetails('Avatar')">
+            <img src="images/avatar.jpg" alt="Avatar">
+            <p>Avatar</p>
+          </div>
+            
+          <div class="movie" onclick="showDetails('Star Wars')">
+            <img src="images/star wars.jpg" alt="Star Wars">
+            <p>Star Wars</p>
+          </div>
+          <div class="movie" onclick="showDetails('Walk Alone')">
+            <img src="images/walk alone.webp" alt="Walk Alone">
+            <p>Walk Alone</p>
+          </div>
+          <div class="movie" onclick="showDetails('Sisu')">
+            <img src="images/sisu.avif" alt="Sisu">
+            <p>Sisu</p>
+          </div>
+        </div>
+        <h2>Trending Series</h2>
+        <!-- Trending Series Section -->
+        <div class="series-container">
+           <div class="series" onclick="showDetails('Money Heist')">
+              <img src="images/money heist.jpg" alt="Money Heist">
+              <p>Money Heist</p>
+           </div>
+           <div class="series" onclick="showDetails('Berlin')">
+              <img src="images/Berlin.jpg" alt="Berlin">
+              <p>Berlin</p>
+           </div>
+           <div class="series" onclick="showDetails('breaking bad')">
+              <img src="images/Breaking_Bad.jpg" alt="breaking bad">
+              <p>Breaking Bad</p>
+           </div>
+
+        </div>  
+            
+    </section>
+
+    <div class="modal" id="detailsModal">
+        <!-- Content Details Page -->
+        <div class="content-details">
+            <img src="images/salaar.jpg" alt="Movie Title 1">
+            <h2 id="modalTitle">Salaar</h2>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <!-- Add more details about the content -->
+            <button onclick="closeDetails()">Close</button>
+        </div>
+    </div>
+
+    <script src="OTT.js"></script>
+</body>
+</html>
